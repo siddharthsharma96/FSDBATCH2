@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+
+  border: 1px solid red;
+  width: 40vh;
+}
+
+.buttonSection {
+  margin: 10px;
+  border: 1px dotted red;
+  border-radius: 2px;
+  padding: 10px 0;
+}
+
+.btn {
+  border: none;
+  font-size: 16px;
+  padding: 10px 16px;
+  background-color: darkgray;
+  margin-right: 5px;
+}

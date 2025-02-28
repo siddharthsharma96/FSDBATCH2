@@ -5,6 +5,7 @@ import { Comp2, Comp3 } from "./Comp2";
 import WithFragments from "./WithFragments";
 import WithoutFragments from "./WithoutFragments";
 import DynamicComponent from "./DynamicComponent";
+import GrandFather from "./GrandFather";
 
 function App() {
   let a = React.createElement("p", {}, "Hello from Jsx");
@@ -39,6 +40,7 @@ function App() {
           <li>hdhsdgh</li>
         </ol>
       </DynamicComponent>
+      <GrandFather />
     </div>
   );
 }
