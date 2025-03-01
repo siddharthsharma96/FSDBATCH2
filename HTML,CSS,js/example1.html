@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Page</title>
+    <style>
+      /* Basic Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* ✅ Updated Navigation Bar (From File 2) */
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        padding: 15px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      /* ✅ Responsive Grid Layout */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .box {
+        width: 30%;
+        margin: 10px;
+        padding: 20px;
+        background-color: lightblue;
+        text-align: center;
+        border-radius: 5px;
+      }
+      /* p {
+        font-size: 40px;
+      } */
+      /* 576px 768px 992px 1200px */
+      /* Tablets view */
+      @media (min-width: 576px) and (max-width: 992px) {
+        /* p {
+          display: none; 
+          font-size: 12px;
+        } */
+        .navbar {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .box {
+          width: 70%;
+        }
+      }
+
+      /* Mobile devices */
+      @media (max-width: 576px) {
+        .navbar {
+          flex-direction: column;
+          text-align: center;
+        }
+        .navbar a {
+          color: white;
+          display: block;
+          border-bottom: 1px solid white;
+        }
+        .box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ✅ Navigation Bar from File 2 -->
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+      dolore ipsa voluptates pariatur, libero non, repellendus minima, officia
+      nihil nostrum quas accusantium obcaecati ullam eos reprehenderit id
+      cupiditate numquam? Ipsum!
+    </p> -->
+    <!-- ✅ Responsive Grid Section -->
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </body>
+</html>

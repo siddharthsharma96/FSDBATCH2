@@ -6,7 +6,6 @@ function App() {
   // 1 value is the variable
   // 2nd value it is a function to update the forst value
   const [val, setVal] = useState(0);
-  const [a, setA] = useState(1);
 
   const handleIncrement = () => {
     setVal(val + 1);
