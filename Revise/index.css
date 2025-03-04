@@ -1,0 +1,86 @@
+/* Universal selector */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Tag Selector */
+body {
+  border: 1px solid black;
+}
+
+/* Id selector */
+#a {
+  /* color: red; */
+}
+
+/* Class Selector */
+.b {
+  /* color: green; */
+}
+
+/* Group Selector */
+h1,
+p,
+h2 {
+  /* color: blue; */
+}
+
+/* descendant selector */
+#c p {
+  /* color: red; */
+}
+
+/* Child Selector */
+div > p {
+  color: aqua;
+}
+
+/* Adjacent Sibling Selctor */
+h1 + p {
+  /* color: antiquewhite; */
+}
+
+/* General Sibling Selector */
+
+h1 ~ p {
+  color: orange;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  color: red;
+}
+
+ul {
+  margin: 30px;
+}
+/* pseudo classes */
+li:nth-child(2) {
+  color: red;
+}
+
+h1:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+/* Pseudo Element */
+
+h1::before {
+  content: " hello everyone ";
+  color: green;
+}
+
+h1::first-letter {
+  color: red;
+}
+
+div {
+  border: 1px solid green;
+  /* padding: 10px 20px 10px 20px;
+   */
+  /* padding: 30px; */
+  padding: 20px 40px;
+  margin: 20px 40px 20px 40px;
+}
