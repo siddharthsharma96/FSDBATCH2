@@ -1,0 +1,19 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexItems {
+  border: 1px solid black;
+  width: 19%;
+  height: 300px;
+  color: red;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
