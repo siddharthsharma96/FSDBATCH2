@@ -1,15 +1,19 @@
 import "./App.css";
 import React from "react";
 import AS, { B } from "./AS";
+import A1 from "./A1";
 function App() {
   // const a = React.createElement("p", [], "hello world");
-  const s = { name: "Siddharth", mobile: "hdfghdf" };
+  const info = { name: "Siddharth", mobile: "hdfghdf" };
   return (
     <div className="App">
       <p>loredfsdf</p>
       {/* {a} */}
-      <AS info={s} aa={"dfdf"} />
+      <AS info={info} aa={"dfdf"} />
       <B></B>
+
+      <p>Props Drilling</p>
+      <A1 info={info}></A1>
     </div>
   );
 }
