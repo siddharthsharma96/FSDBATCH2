@@ -11,6 +11,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Loader from "./Loader";
 import CounterwithUseState from "./ConterwithUseState";
+import CounterWithUseEffect from "./CounterWithUseEffect";
 
 const Home = lazy(() => import("./Home"));
 const AboutUs = lazy(() => import("./AboutUs"));
@@ -35,6 +36,11 @@ let a = createBrowserRouter([
       {
         path: "/counter",
         element: <CounterwithUseState />,
+      },
+
+      {
+        path: "/useEffect",
+        element: <CounterWithUseEffect />,
       },
       {
         path: "/about",
