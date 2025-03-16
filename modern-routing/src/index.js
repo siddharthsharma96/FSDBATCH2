@@ -12,6 +12,7 @@ import { lazy, Suspense } from "react";
 import Loader from "./Loader";
 import CounterwithUseState from "./ConterwithUseState";
 import CounterWithUseEffect from "./CounterWithUseEffect";
+import HOC from "./HOC";
 
 const Home = lazy(() => import("./Home"));
 const AboutUs = lazy(() => import("./AboutUs"));
@@ -38,6 +39,10 @@ let a = createBrowserRouter([
         element: <CounterwithUseState />,
       },
 
+      {
+        path: "/hoc",
+        element: <HOC />,
+      },
       {
         path: "/useEffect",
         element: <CounterWithUseEffect />,
