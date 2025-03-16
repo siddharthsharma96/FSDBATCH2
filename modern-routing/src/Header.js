@@ -1,5 +1,12 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import UserContext from "./UserContext";
+import LoginContext from "./loginContext";
 const Header = () => {
+  const { userName } = useContext(UserContext);
+  console.log(userName);
+  const { a } = useContext(LoginContext);
+
   return (
     <div className="header">
       <div className="navItems">
@@ -58,6 +65,7 @@ const Header = () => {
           Contact Us
         </NavLink>
       </div>
+      <p>{a}</p>
     </div>
   );
 };

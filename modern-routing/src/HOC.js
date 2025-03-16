@@ -1,7 +1,12 @@
+import { useContext } from "react";
 import UserCard from "./UserCard";
 import UserWithAddtionalData from "./UserWithAdditonalData";
+import UserContext from "./UserContext";
+import LoginContext from "./loginContext";
 
 const HOC = () => {
+  const { userName } = useContext(UserContext);
+  //   const { a } = useContext(LoginContext);
   const users = [
     {
       id: 1,
@@ -27,6 +32,8 @@ const HOC = () => {
   const ASD = UserWithAddtionalData(UserCard);
   return (
     <div>
+      <h1>{userName}</h1>
+      {/* <h1>{a}</h1> */}
       <h1>Learning higher Order Components</h1>
       <div className="section">
         {users.map((user) => {
