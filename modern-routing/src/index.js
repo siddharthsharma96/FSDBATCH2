@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import ContactUs from "./ContactUs";
 import { lazy, Suspense } from "react";
 import Loader from "./Loader";
+import CounterwithUseState from "./ConterwithUseState";
 
 const Home = lazy(() => import("./Home"));
 const AboutUs = lazy(() => import("./AboutUs"));
@@ -30,6 +31,10 @@ let a = createBrowserRouter([
             <Home />
           </Suspense>
         ),
+      },
+      {
+        path: "/counter",
+        element: <CounterwithUseState />,
       },
       {
         path: "/about",
