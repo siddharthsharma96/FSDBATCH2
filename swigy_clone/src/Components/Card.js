@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 const Card = ({ data }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={() => navigate(`/restaurant/${data.info.id}`)}
+    >
       <img src={`images/${data?.info.cloudinaryImageId}.avif`} />
       <div className="car__Data">
         <h3 className="cardResName">{data?.info.name}</h3>

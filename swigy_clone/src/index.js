@@ -10,6 +10,7 @@ import Help from "./Pages/Help";
 import Search from "./Pages/Search";
 import Cart from "./Pages/Cart";
 import PageNotFound from "./Pages/PageNotFound";
+import Restaurant from "././Pages/Restaurant";
 
 const a = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const a = createBrowserRouter([
       {
         path: "/search",
         element: <Search />,
+      },
+      {
+        path: "/restaurant/:resId",
+        element: <Restaurant />,
       },
       {
         path: "/cart",
