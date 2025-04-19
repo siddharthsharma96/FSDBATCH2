@@ -4,11 +4,13 @@
   "description": "Learning Express and how to create api's",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "start:dev": "NODE_ENV=production nodemon server.js"
   },
   "author": "Siddharth Sharma",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0"
   }
 }
