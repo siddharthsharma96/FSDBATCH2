@@ -1,9 +1,19 @@
 const app = require("./index");
+const mongoose = require("mongoose");
 
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 
 console.log(process.env.NODE_ENV);
+
+mongoose
+  .connect(process.env.DB_URL)
+  .then(() => {
+    console.log("Db Connected Succesfuuly");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 // 4.Server
 
